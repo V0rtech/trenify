@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Image Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght=600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container"> <!-- THIS CONTAINER SHOULD BE PRESENT -->
+        <h1>TREN YOURSELF</h1>
+
+        <div class="main-content">
+            <div class="controls">
+                <div class="control-group">
+                    <h3>1. Upload Base Image</h3>
+                    <input type="file" id="baseImageInput" accept="image/*">
+                </div>
+
+                <div class="control-group">
+                    <h3>2. Add Elements</h3>
+                    <div class="element-buttons">
+                        <button id="addMoney">Add Money</button>
+                        <button id="addSyringe">Add Syringe</button>
+                        <button id="addCar">Add Car</button>
+                        <button id="addAnimeGirl">Add Anime Girl</button>
+                        <button id="addSydneySweeney">Add Sydney Sweeney</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3>3. Options & Download</h3>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="bwToggle"> Black and White
+                    </label>
+                    <button id="downloadBtn">Download Image</button>
+                </div>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="imageCanvas"></canvas>
+                <div id="canvasPlaceholder">
+                    Upload an image to get started!
+                </div>
+            </div>
+        </div>
+
+
+    </div> <!-- THIS CONTAINER CLOSING TAG SHOULD BE PRESENT -->
+
+    <script src="script.js"></script>
+</body>
+</html>
